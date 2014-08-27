@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.files       = Dir["{lib}/**/*"]
   s.homepage    = 'http://colibri-software.com'
   s.require_paths = ['lib']
-  s.add_dependency "locomotive_plugins", '~> 1.0.1'
+  s.add_dependency "locomotive_plugins", '~> 1.0'
   s.add_dependency "mongoid"
 
   s.add_development_dependency "rspec", '~> 2.12'

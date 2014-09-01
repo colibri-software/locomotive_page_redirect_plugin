@@ -1,3 +1,5 @@
- module PageRedirectPlugin
-   VERSION = '0.1.1'
- end
+module Locomotive
+  module PageRedirect
+    VERSION = '0.1.1'
+  end
+end

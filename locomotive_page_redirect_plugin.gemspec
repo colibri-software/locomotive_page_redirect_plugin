@@ -2,18 +2,19 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require 'page_redirect_plugin/version'
+require 'locomotive/page_redirect/plugin/version'
 
 
 Gem::Specification.new do |s|
 
   s.name        = 'locomotive_page_redirect_plugin'
-  s.version     = PageRedirectPlugin::VERSION
+  s.version     = Locomotive::PageRedirect::VERSION
   s.date        = '2013-04-24'
   s.summary     = "Locomotive CMS plugin for page redirection"
   s.description = "Allows CMS designers to assign a locomotive model that defines page redirestions."
   s.authors     = ["Colibri Software Inc."]
   s.email       = 'info@colibri-software.com'
+  s.licenses    = ['MIT']
 
   s.add_dependency "locomotive_plugins", '~> 1.0'
 

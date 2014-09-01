@@ -1,0 +1,43 @@
+h1. Page Redirect Plugin
+
+This is a plugin for LocomotiveCMS. It was created to allow LocomotiveCMS authors to setup page redirects easily.
+
+h2. Installation
+
+To use this plugin you must be using a version of LocomotiveCMS that has the plugins feature designed by "Colibri Software":https://www.colibri-software.com. You can do this by making the following changes to the Gemfile in you app:
+
+* Remove or comment out the following line:
+@gem 'locomotive_cms', '~> 2.X.X', require: 'locomotive/engine'@
+* Add the following line:
+@gem 'locomotive_cms', require: 'locomotive/engine', git: 'https://github.com/colibri-software/locomotive_engine.git', branch: 'plugins'@
+
+Then add the following lines in your Gemfile to include the plugin:
+<pre><code>group :locomotive_plugins do
+  gem 'locomotive_page_redirect_plugin'
+end</code></pre>
+
+h2. Usage
+
+h3. Configuring Plugin
+
+This plugin provides a few configuration options which are as follows:
+
+* Redirect Model - the model that will store the page redirects
+* Regexp Field Slug - the slug of the field that contains the path regexp to match.
+* URL Field Slug - the slug of the field that contains the URL to redirect to if there is a match.
+
+h3. Liquid Drops
+
+This plugin has no liquid drops.
+
+h3. Liquid Tags
+
+This plugin has no liquid tags.
+
+h3. Liquid Filters
+
+Thsi plugin has no liquid filters.
+
+h3. JS3
+
+The plugin provides no methods or variables for JS3.
